@@ -1,0 +1,50 @@
+// ######## card_1 ########
+.card_1 {
+    width: 400px;
+    margin:0px auto;
+    background-color:white;
+    box-shadow:0px 5px 20px #999;
+    a {
+        color:#333;
+        text-decoration:none;
+    }
+    :hover .card_1-image img{
+        width:160%;
+        filter:grayscale(0);
+    }
+}
+.card_1-image {
+    height:250px;
+    position:relative;
+    overflow:hidden;
+    img{
+        width:150%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        filter:grayscale(1);
+        transition-property:filter width;
+        transition-duration:.3s;
+        transition-timing-function:ease;
+    }
+}
+.card_1-body {
+    text-align:center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.card_1-date {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.card_1-title, .card_1-excerpt {
+    font-family: 'Playfair Display', serif;
+}
+.card_1-date, .card_1-title {
+    text-align:center;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.card_1-date, .card_1-excerpt {
+    color: #777;
+}
